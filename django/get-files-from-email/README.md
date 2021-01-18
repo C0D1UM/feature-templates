@@ -4,10 +4,12 @@ This is an example for get attachment files from email via IMAP protocol
 
 # Required Packages
 
-1. imapclient
-1. mail-parser
+1. [imapclient](https://pypi.org/project/IMAPClient/)
+1. [mail-parser](https://pypi.org/project/mail-parser/)
 
 # Django Setting
+
+Add this to your setting file (eg. settings.py)
 
 ```python
 FETCH_EMAIL_HOST = env.str(var='FETCH_EMAIL_HOST', default='outlook.office365.com')
