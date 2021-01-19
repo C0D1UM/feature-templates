@@ -17,6 +17,8 @@
 
 * If you have more section feel free to add from here
 ```
+### Update Table of Contents
+In each topic (Django, Angular) make sure you update the `README.md` and add a link to your feature.
 
 ### Process
 - Request a review: Initiate a pull request to the [CODIUM Feature Templates](https://github.com/C0D1UM/feature-templates) when proposed a change or new feature, then assign the review from someone in tech council team (@earthpyy, @piyapan039285, @powerdefy and @NorakGithub). When everything looks good, the pull request will be merged.
