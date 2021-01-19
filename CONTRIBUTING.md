@@ -1,5 +1,7 @@
 # Contributing
 ## Participating in CODIUM Feature Template Process
+### Initial
+- Fork this repository
 ### Document Format
 - Choose the topic that you would like to template to (Django, Angular ...)
 - Create a new directory inside that topic and make sure that directory name is kebab-case.
