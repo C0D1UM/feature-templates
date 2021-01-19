@@ -1,6 +1,8 @@
 # Description
 
-This is an example for get attachment files from email via IMAP protocol
+This is an example for get attachment files from email via IMAP protocol including functions:
+1. **get_files_with_imap:** open emails to mark them as `SEEN`, then get attachment files and return it as a list of ContentFile objects that ready to save to model FileField 
+1. **delete_seen_emails_with_imap:** delete emails that mark as `SEEN`
 
 # Required Packages
 
