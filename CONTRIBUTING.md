@@ -17,4 +17,4 @@
 ```
 
 ### Process
-- Request a review: Initiate a pull request to the [CODIUM Feature Templates](https://github.com/C0D1UM/feature-templates) when proposed a change or new feature, then assign the review from someone in tech council team. When everything looks good, the pull request will be merged.
+- Request a review: Initiate a pull request to the [CODIUM Feature Templates](https://github.com/C0D1UM/feature-templates) when proposed a change or new feature, then assign the review from someone in tech council team (@earthpyy, @piyapan039285, @powerdefy and @NorakGithub). When everything looks good, the pull request will be merged.
