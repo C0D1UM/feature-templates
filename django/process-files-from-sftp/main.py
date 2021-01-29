@@ -28,6 +28,10 @@ class SFTPHandler:
 def process_all_files(client: pysftp.Connection, path: str, files: List[str]):
     for file in files:
         print(f"Processing {file}")
+        with client.open(file) as file_obj:
+            print(f"File context {file_obj.read()}")  # print file bytes
+        print(f"Deleting {file}")
+        client.remove(file)
 
 
 def process_pdf_files(client: pysftp.Connection, path: str, files: List[str]):

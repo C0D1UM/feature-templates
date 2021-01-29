@@ -2,7 +2,7 @@ version: "3.7"
 
 services: 
   sftp:
-    image: atmoz/sftp
+    image: atmoz/sftp@sha256:d244cf7156c2c831e3144033b34030bf39a18951231a80f1d704af5e9ec28e94
     volumes:
         - ./sftp_volumes:/home/username
     ports:
