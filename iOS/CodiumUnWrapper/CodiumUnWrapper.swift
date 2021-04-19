@@ -5,151 +5,144 @@ import UIKit
 
 extension Optional {
 
-    func unWrapOr<T>(_ value : T) -> T {
-        if let val = self as? T {
-            return val
-        } else {
-            return value
-        }
+    func unwrapOr<T>(_ value : T) -> T {
+        return self as? T ?? value
     }
     
     var isNil : Bool {
-        guard self != nil else {return true}
-        return false
+        return self != nil ? false : true
     }
     
     var isNotNil : Bool {
-        guard self != nil else {return false}
-        return true
+        return self != nil ? true : false
     }
     
 }
 
 extension Optional where Wrapped == Date {
-    var unWrap : Wrapped {
-        return self.unWrapOr(Date())
+    var unwrap : Wrapped {
+        return self.unwrapOr(Date())
     }
 }
 
 extension Optional where Wrapped == Bool {
-    var unWrap : Wrapped {
-        return self.unWrapOr(false)
+    var unwrap : Wrapped {
+        return self.unwrapOr(false)
     }
 }
 
 extension Optional where Wrapped == String {
-    var unWrap : Wrapped {
-        return self.unWrapOr("")
+    var unwrap : Wrapped {
+        return self.unwrapOr("")
     }
 }
 
 extension Optional where Wrapped == Character {
-    var unWrap : Wrapped {
+    var unwrap : Wrapped {
         let char : Character = " "
-        return self.unWrapOr(char)
+        return self.unwrapOr(char)
     }
 }
 
 extension Optional where Wrapped == Int {
-    var unWrap : Wrapped {
-        return self.unWrapOr(Int(0))
+    var unwrap : Wrapped {
+        return self.unwrapOr(Int(0))
     }
 }
 
 extension Optional where Wrapped == Int8 {
-    var unWrap : Wrapped {
-        return self.unWrapOr(Int8(0))
+    var unwrap : Wrapped {
+        return self.unwrapOr(Int8(0))
     }
 }
 
 extension Optional where Wrapped == Int16 {
-    var unWrap : Wrapped {
-        return self.unWrapOr(Int16(0))
+    var unwrap : Wrapped {
+        return self.unwrapOr(Int16(0))
     }
 }
 
 extension Optional where Wrapped == Int32 {
-    var unWrap : Wrapped {
-        return self.unWrapOr(Int32(0))
+    var unwrap : Wrapped {
+        return self.unwrapOr(Int32(0))
     }
 }
 
 extension Optional where Wrapped == Int64 {
-    var unWrap : Wrapped {
-        return self.unWrapOr(Int64(0))
+    var unwrap : Wrapped {
+        return self.unwrapOr(Int64(0))
     }
 }
 
 extension Optional where Wrapped == UInt {
-    var unWrap : Wrapped {
-        return self.unWrapOr(UInt(0))
+    var unwrap : Wrapped {
+        return self.unwrapOr(UInt(0))
     }
 }
 
 extension Optional where Wrapped == Double {
-    var unWrap : Wrapped {
-        return self.unWrapOr(Double(0))
+    var unwrap : Wrapped {
+        return self.unwrapOr(Double(0))
     }
 }
 
 extension Optional where Wrapped == Float {
-    var unWrap : Wrapped {
-        return self.unWrapOr(Float(0))
+    var unwrap : Wrapped {
+        return self.unwrapOr(Float(0))
     }
 }
 
 extension Optional where Wrapped == Float80 {
-    var unWrap : Wrapped {
-        return self.unWrapOr(Float80(0))
+    var unwrap : Wrapped {
+        return self.unwrapOr(Float80(0))
     }
 }
 
 @available(iOS 14.0, *)
 extension Optional where Wrapped == Float16 {
-    var unWrap : Wrapped {
-        return self.unWrapOr(Float16(0))
+    var unwrap : Wrapped {
+        return self.unwrapOr(Float16(0))
     }
 }
 
 extension Optional where Wrapped == CGFloat {
-    var unWrap : Wrapped {
-        return self.unWrapOr(CGFloat(0))
+    var unwrap : Wrapped {
+        return self.unwrapOr(CGFloat(0))
     }
 }
 
 extension Optional where Wrapped == [Any] {
-    var unWrap : Wrapped {
-        return self.unWrapOr([])
+    var unwrap : Wrapped {
+        return self.unwrapOr([])
     }
 }
 
 extension Optional where Wrapped == [String] {
-    var unWrap : Wrapped {
-        return self.unWrapOr([])
+    var unwrap : Wrapped {
+        return self.unwrapOr([])
     }
 }
 
 extension Optional where Wrapped == [Int] {
-    var unWrap : Wrapped {
-        return self.unWrapOr([])
+    var unwrap : Wrapped {
+        return self.unwrapOr([])
     }
 }
 
 extension Optional where Wrapped == [Bool] {
-    var unWrap : Wrapped {
-        return self.unWrapOr([])
+    var unwrap : Wrapped {
+        return self.unwrapOr([])
     }
 }
 
 extension Optional where Wrapped == [String:Any] {
-    var unWrap : Wrapped {
-        return self.unWrapOr([:])
+    var unwrap : Wrapped {
+        return self.unwrapOr([:])
     }
 }
 
 extension Optional where Wrapped == [String:String] {
-    var unWrap : Wrapped {
-        return self.unWrapOr([:])
+    var unwrap : Wrapped {
+        return self.unwrapOr([:])
     }
 }
-
